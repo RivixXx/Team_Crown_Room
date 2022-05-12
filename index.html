@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Crown Room</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header__container">
+            <div class="header__main">
+                <a href="#"><img src="img/logo.png" alt="Лого" class="header__logo"></a>
+                <h1 class="header__title">Team Crown Room</h1>
+            </div>
+            <nav class="header__nav" id="menu">
+                <ul class="hvigation__title">
+                    <li><a data-goto=".page__section_1" href="#" class="navigation__link">контакты</a></li>
+                    <li><a href="feedback.html" class="navigation__link">обратная связь</a></li>
+                </ul>
+            </nav>
+            <div class="burger__content">
+                <div class="burger__menu">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <section class="header-slider__container">
+            <div class="header-body__left">
+                <h2 class="header-body__title">SHOCK TREATMENT FOR THE ROAD</h2>
+                <a href="#" id="open__popup"><span></span><span></span><span></span><span></span>получить скидку</a>
+                <div class="pop_up" id="full__popup"> 
+                    <div class="pop_up-container">
+                        <div class="pop_up-body" id="body__popup">
+                            <svg id="svg__example" width="134" height="197" viewBox="0 0 134 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="134" height="197" fill="white"/>
+                                <path d="M52 58.8667L60.5714 53L53.4286 61L62 55.6667" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M52.7803 53.1097C48.2565 55.5705 37.8518 58.7204 32.4233 51.6332C25.6377 42.7742 24.5937 37.3604 25.1157 35.8839C25.6377 34.4074 26.6816 26.0406 38.165 25.0562C47.3517 24.2688 52.7803 31.9466 54.3462 35.8839C55.2161 41.0403 56.1209 51.7044 52.7803 53.1097ZM52.7803 53.1097L58 60" stroke="black" stroke-width="2"/>
+                                <path d="M42 99C43.0714 92.1667 47.5714 77.4 57 73" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M57 76C62.8286 80.7514 74.5886 93.2034 75 105" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M50 160C50.1667 152.667 52.8 133.2 62 114" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M55 3L57.9905 56.0188C58.083 57.6595 57.8789 59.3034 57.388 60.8717V60.8717C56.8426 62.6138 56.5652 64.4286 56.5652 66.2541V88C57.087 93 61.7826 103.1 61.7826 113.5C61.7826 126.5 62.3043 151 67 158" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M83.8807 153.679L87.8516 153.952C89.9807 154.098 92.0742 154.547 94.0684 155.286V155.286C96.5442 156.203 99.1693 156.672 101.821 156.672L101.955 156.672C104.03 156.672 106.091 156.95 108.085 157.498L112.35 158.672" stroke="black" stroke-width="2"/>
+                                <path d="M77.6444 159.678L80.4471 162.421C81.9265 163.869 83.9205 164.678 86.0058 164.678L109.837 164.678" stroke="black" stroke-width="2"/>
+                                <path d="M77.653 178.68V178.68C79.1979 181.142 81.9775 182.555 84.906 182.367L85.7984 182.31C87.2012 182.22 88.5959 182.529 89.8189 183.202V183.202C90.9723 183.837 92.2798 184.149 93.6044 184.106L106.73 183.68" stroke="black" stroke-width="2"/>
+                                <path d="M75.5183 187.673L98.34 188.095C101.071 188.146 103.756 188.784 106.213 189.967L106.639 190.172" stroke="black" stroke-width="2"/>
+                                <path d="M106.53 190.945C106.529 190.945 106.528 190.942 106.527 190.935C106.529 190.941 106.53 190.944 106.53 190.945ZM106.5 190.495C106.504 190.167 106.541 189.681 106.62 188.969C106.653 188.666 106.692 188.336 106.734 187.98C106.977 185.916 107.323 182.972 107.323 179.193C107.323 174.987 107.963 169.578 108.835 165.223C109.271 163.042 109.755 161.182 110.224 159.894C110.441 159.298 110.633 158.885 110.785 158.633C110.949 158.62 111.108 158.603 111.251 158.588L111.269 158.587L111.292 158.584C111.602 158.552 111.893 158.522 112.193 158.508C112.814 158.479 113.326 158.53 113.74 158.712C114.355 158.981 115.5 159.891 115.5 164.011C115.5 168.231 114.813 175.433 113.113 181.351C112.26 184.324 111.188 186.835 109.917 188.486C108.799 189.939 107.684 190.552 106.5 190.495Z" fill="black" stroke="black" stroke-width="3"/>
+                            </svg>
+                            <div class="pop_up-close" id="close__popup">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-body__right">
+                <div class="header-slider swiper">
+                <div class="header-slider__wrapper swiper-wrapper">
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__image">
+                            <img src="img/Slider_img/slide1.jpg" alt="Картинка слайдера">
+                        </div>
+                    </div>
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__slide swiper-slide">
+                            <div class="header-slider__image">
+                                <img src="img/Slider_img/slide2.jpg" alt="Картинка слайдера">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__slide swiper-slide">
+                            <div class="header-slider__image">
+                                <img src="img/Slider_img/slide3.jpg" alt="Картинка слайдера">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__slide swiper-slide">
+                            <div class="header-slider__image">
+                                <img src="img/Slider_img/slide4.jpg" alt="Картинка слайдера">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__slide swiper-slide">
+                            <div class="header-slider__image">
+                                <img src="img/Slider_img/slide5.jpg" alt="Картинка слайдера">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__slide swiper-slide">
+                            <div class="header-slider__image">
+                                <img src="img/Slider_img/slide6.jpg" alt="Картинка слайдера">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__slide swiper-slide">
+                        <div class="header-slider__slide swiper-slide">
+                            <div class="header-slider__image">
+                                <img src="img/Slider_img/slide7.jpg" alt="Картинка слайдера">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-slider__pagination swiper-pagination"></div>      
+                </div>
+            </div>
+        </section>
+        <section class="cardsProduct__container">
+            <div class="card__nav">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Корзина</span>
+                </div>
+                <div class="item-count">0</div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_1.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">Nike MX-720-818</span>
+                                <p>Модель: BV5841-00</p>
+                            </div>
+                            <div class="cardsProduct__card-price">12 480 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_2.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">NASA, CROP</span>
+                                <p>Модель: 9171G-23X</p>
+                            </div>
+                            <div class="cardsProduct__card-price">3 299 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_3.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">Nike Air Max 720</span>
+                                <p>Модель: AO2924 400</p>
+                            </div>
+                            <div class="cardsProduct__card-price">7 290 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_4.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">FORWARD</span>
+                                <p>Модель: U22211G-FF202</p>
+                            </div>
+                            <div class="cardsProduct__card-price">7 900 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_5.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">Nike Air BARRAGE MID</span>
+                                <p>Модель: mid-16531-1</p>
+                            </div>
+                            <div class="cardsProduct__card-price">5 390 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_6.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">FILA DISRUPTOR 2</span>
+                                <p>Модель: GTj-12365-00</p>
+                            </div>
+                            <div class="cardsProduct__card-price">3 990 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsProduct__cards">
+                <div class="cardsProduct__card">
+                    <img src="img/Card_img/cross_7.jpg" alt="" class="cardsProduct__card-img">
+                    <div class="cardsProduct__card-content">
+                        <div class="cardsProduct__card-row">
+                            <div class="cardsProduct__card-details">
+                                <span class="cardsProduct__card-title">Nike Air Jordan</span>
+                                <p>Модель: 002-2332</p>
+                            </div>
+                            <div class="cardsProduct__card-price">5 820 ₽</div>
+                        </div>
+                        <div class="cardsProduct__card-button">
+                            <button>Купить в 1 клик</button>
+                            <button class="card-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback__container">
+            <div class="feedback__box">
+                <h2 class="feedback-title">Our best workers</h2>
+                <div class="feedback__card"></div>
+            </div>
+        </section>
+        <section class="section__map  page__section_1">
+            <div class="section__content">
+                <div class="section__box">
+                    <h4 class="map__title">Успей купить до наступления весны</h4>
+                    <p class="map__text">Адрес: г. Санкт-Петербург, ул.Гражданская, 13-15</p>
+                    <p class="map__text">Телефон: <a href="tel:+7 (999) 456-12-45">+7 (999) 456-12-45"</a></p>
+                </div>
+            </div>
+            <div class="map__content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6921.558110344024!2d30.31146699199573!3d59.92865381923759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963102577fe953%3A0x896bffbfacdacaa5!2z0JHQtdGA0YLQs9C-0LvRjNC0INGG0LXQvdGC0YA!5e0!3m2!1sru!2sru!4v1647334333516!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <footer class="footer__container">
+            <div class="footer__box">
+                <h3 class="footer__box-title title-box">Категории товаров</h3>
+                <ul class="footer__box-list">
+                    <li><a href="#" class="footer__box-link">Бытовая техника</a></li>
+                    <li><a href="#" class="footer__box-link">Электроника</a></li>
+                    <li><a href="#" class="footer__box-link">Одежда</a></li>
+                    <li><a href="#" class="footer__box-link">Обувь</a></li>
+                    <li><a href="#" class="footer__box-link">Аксессуары</a></li>
+                </ul>
+            </div>
+            <div class="footer__box footer__box_auto">
+                <h3 class="footer__box-title title-box">Разделы сайта</h3>
+                <ul class="footer__box-list">
+                    <li><a href="#" class="footer__box-link">Магазин</a></li>
+                    <li><a href="#" class="footer__box-link">Контакты</a></li>
+                    <li><a href="#" class="footer__box-link">Блог</a></li>
+                    <li><a href="#" class="footer__box-link">Политика конфиденциальности</a></li>
+                    <li><a href="#" class="footer__box-link">Договор оферты</a></li>
+                    <li><a href="#" class="footer__box-link">О нас</a></li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__box-title title-box">Полезные ссылки</h3>
+                <ul class="footer__box-list">
+                    <li><a href="#" class="footer__box-link">google.com</a></li>
+                    <li><a href="#" class="footer__box-link">yandex.ru</a></li>
+                    <li><a href="#" class="footer__box-link">developer.mozilla.org</a></li>
+                    <li><a href="#" class="footer__box-link">Обувь</a></li>
+                    <li><a href="#" class="footer__box-link">mdn.</a></li>
+                </ul>
+            </div>
+            <div class="footer__box_info">
+                <a href="#"><img src="img/logo_footer.png" alt="Лого" class="header__logo footer__logo"></a>
+                <div class="footer__box-copyright">(с) Team Crown Room 2022</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
