@@ -8,7 +8,35 @@ if (burgerMenu) {
         burgerMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
-}
+};
+
+// скролл до якоря ==================================================================
+
+const menuLimks = document.querySelectorAll('.navigation__link[data-goto]');
+if(menuLimks.length > 0) {
+    menuLimks.forEach(menuLink => {
+        menuLink.addEventListener("click", onMenuLinkClick); 
+    });
+    function onMenuLinkClick(e) {
+        const menuLink = e.target;
+        if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+            const gotoBlock = document.querySelector(menuLink.dataset.goto);
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+
+            if(burgerMenu.classList.contains('_active')) {
+                document.body.classList.toggle('_lock');
+                burgerMenu.classList.remove('_active');
+                menuBody.classList.remove('_active');
+            }
+
+            window.scrollTo({
+                top: gotoBlockValue,
+                behavior: "smooth"
+            });
+            e.preventDefault();
+        };
+    };
+};
 
 try {
 
@@ -35,34 +63,6 @@ try {
         freemode: true,
         speed: 1000,
     });
-
-    // скролл до якоря ==================================================================
-
-    const menuLimks = document.querySelectorAll('.navigation__link[data-goto]');
-    if(menuLimks.length > 0) {
-        menuLimks.forEach(menuLink => {
-            menuLink.addEventListener("click", onMenuLinkClick); 
-        });
-        function onMenuLinkClick(e) {
-            const menuLink = e.target;
-            if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-                const gotoBlock = document.querySelector(menuLink.dataset.goto);
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
-
-                if(burgerMenu.classList.contains('_active')) {
-                    document.body.classList.toggle('_lock');
-                    burgerMenu.classList.remove('_active');
-                    menuBody.classList.remove('_active');
-                }
-
-                window.scrollTo({
-                    top: gotoBlockValue,
-                    behavior: "smooth"
-                });
-                e.preventDefault();
-            };
-        };
-    };
 
     // Анимация полета в корзину на jQuery============================================================
 
